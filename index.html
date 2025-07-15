@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>H2O Rideau Docs</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #fafafa;
+        color: #333;
+      }
+
+      header {
+        background-color: #0044cc;
+        color: white;
+        padding: 20px 40px;
+      }
+
+      header h1 {
+        margin: 0;
+        font-size: 1.8rem;
+      }
+
+      nav {
+        background-color: #e6ecff;
+        padding: 15px 40px;
+      }
+
+      nav a {
+        margin-right: 20px;
+        color: #0044cc;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      nav a:hover {
+        text-decoration: underline;
+      }
+
+      main {
+        padding: 40px;
+        max-width: 960px;
+        margin: auto;
+      }
+
+      section {
+        margin-bottom: 40px;
+      }
+
+      h2 {
+        border-bottom: 2px solid #ddd;
+        padding-bottom: 10px;
+        color: #0044cc;
+      }
+
+      code {
+        background-color: #f4f4f4;
+        padding: 2px 6px;
+        border-radius: 4px;
+        font-family: monospace;
+      }
+
+      pre {
+        background-color: #f4f4f4;
+        padding: 15px;
+        border-radius: 6px;
+        overflow-x: auto;
+      }
+
+      footer {
+        text-align: center;
+        padding: 20px;
+        font-size: 0.9em;
+        background-color: #f0f0f0;
+        color: #777;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>H2O Rideau Documentation</h1>
+    </header>
+
+    <nav>
+      <a href="#intro">Introduction</a>
+      <a href="#usage">Usage</a>
+      <a href="#api">API Reference</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+
+    <main>
+      <section id="intro">
+        <h2>Introduction</h2>
+        <p>
+          Welcome to the H2O Rideau documentation site. Here you'll find
+          everything you need to know to use our intelligent document search
+          system.
+        </p>
+      </section>
+
+      <section id="usage">
+        <h2>Usage</h2>
+        <p>Install the package and start using the API:</p>
+        <pre><code>npm install h2o-rideau</code></pre>
+        <p>Import and call:</p>
+        <pre><code>import { searchDocs } from 'h2o-rideau';
+
+searchDocs("example query");</code></pre>
+      </section>
+
+      <section id="api">
+        <h2>API Reference</h2>
+        <p><strong>GET /collections</strong> — Fetch available collections</p>
+        <p>
+          <strong>POST /query/response</strong> — Submit query to specific
+          collection
+        </p>
+      </section>
+
+      <section id="faq">
+        <h2>FAQ</h2>
+        <p>
+          <strong>Q:</strong> How do I integrate this into my site?<br /><strong
+            >A:</strong
+          >
+          You can use the JavaScript SDK or REST API directly.
+        </p>
+      </section>
+    </main>
+    <iframe
+      src="http://localhost:5173"
+      style="
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 500px;
+        height: 50%;
+        border: none;
+        border-radius: 10px;
+        z-index: 1000;
+      "
+    ></iframe>
+
+    <footer>&copy; 2025 H2O.ai — Rideau Docs</footer>
+  </body>
+</html>
